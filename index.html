@@ -1,0 +1,152 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="bulma.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="logo.png"/>
+    </head>
+    <body class="has-navbaer-fixed-top">
+        <nav class="navbar is-fixed-top is-dark" style="border-bottom: 2px solid grey;">
+            <div class="navbar-brand has-text-white">
+                <a class="navbar-item title is-5 has-text-white" href="#">Discord.Meet</a>
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item has-text-white" href="#how">Get started</a>
+                <a class="navbar-item has-text-white" href="#cards">CharacterCards</a>
+                <a class="navbar-item has-text-white" href="#match">Matching Preferences</a>
+                <a class="navbar-item has-text-white" href="#kick">How does joining work?</a>
+                <a class="navbar-item has-text-white" href="#commands">Commands</a>
+                <a class="navbar-item has-text-white" href="#faq">FAQ</a>
+            </div>
+        </nav>
+        <section class="hero is-fullheight-with-navbar" id="hero"> 
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <p class="title is-1 has-text-white">Discord.Meet</p>
+
+                    <p class="subtitle is-4 has-text-white">Chat with random people from all over the world right from your DMs</p>
+
+                    <a class="button is-success is-large" href="https://discord.gg/Sfw5THU">Join now!</a>
+
+                    <a href="#kick"><p class="content has-text-info">Why was I kicked from the server?</p></a>
+
+                    <p class="content is-medium has-text-white">Or if you wanna talk <i>about</i> the service:</p>
+
+                    <a class="button is-info" href="https://discord.gg/jdb99r3">Join the discussion server</a>
+                </div>
+            </div>
+        </section>
+        <section class="section has-background-grey-darker" id="how">
+            <div class="container has-text-grey-lighter">
+                <h1 class="title is-3 has-text-white">Get started</h1>
+                <p class="content is-medium">
+                    There are a couple steps you can take to make your expierience on Discord.Meet more enjoyable.<br/>
+                    If you just wanna get going skip to point 3.
+                </p>
+
+                <h4 class="subtitle is-4 has-text-white">1. Set your character card</h4>
+                <p class="content is-medium">
+                The character card can be used to give your partner some info about yourself right after matching.<br/>
+                Read more on what that looks like <a href="#cards">here</a>.
+                </p>
+
+                <h4 class="subtitle is-4 has-text-white">2. Set your matching preferences</h4>
+                <p class="content is-medium">
+                You can customize what people you'll be matched with via some parameters, like what gender your partner should have.
+                Read more on Matching Preferences <a href="#match">here</a>.
+                </p>
+
+                <h4 class="subtitle is-4 has-text-white">3. Meet some people </h4>
+                <p class="content is-medium">
+                Now that you're all set up you can start meeting new people!
+                To get going simply type <span class="tag is-info is-medium">!search</span>. <br/>
+                If you decide you wanna meet someone else during and active chat, type <span class="tag is-info is-medium">!next</span>.
+                </p>
+            </div>
+        </section>
+        <section class="section has-background-white" id="cards">
+            <div class="container">
+                <h1 class="title is-3">What are "Character cards"?</h1>
+                <div class="columns">
+                <div class="content is-medium column is-four-fiths">
+                    <p>
+                        "Character cards" are special embeds containing information set by a user to be shown to their partner on a match.<br/>
+                        You can set the following fields:
+                    </p>
+                        <ul style="list-style: square;" class="">
+                            <li>Nickname</li>
+                            <li>Profile Image</li>
+                            <li>Description</li>
+                            <li>Gender</li>
+                            <li>Interests</li>
+                        </ul>
+
+                        <p> Interests are a bit special, as the bot will try to match people with matching interests.
+                    </p>
+                </div>
+                <div class="column">
+                    <img class="image" src="charcard.png" alt="character card" />
+                </div>
+                </div>
+            <div class="container">
+            </div>
+        </section>
+        <section class="section has-background-grey-darker" id="match">
+            <div class="container has-text-white">
+                <h1 class="title is-3 has-text-white">Matching Preferences</h1>
+                <p class="content is-medium">
+                    Who you'll be matched with depends on a couple of parameters.<br/>
+                    You can set:
+                    <ul style="list-style: square;">
+                        <li>What Gender your partner should have</li>
+                        <li>What country your partner should be from</li>
+                        <li>Wether or not you're looking for an NSFW chat</li>
+                        <li>What interests your partner should have in common</li>
+                    </ul>
+                </p>
+                <br/>
+                <p class="content is-medium">
+                Interests are a bit special, as they're a weak criterium, meaning if noone with matching interests is waiting that
+                parameter is ignored. The other three are strong criteria, meaning if noone with matching ones is in queue you won't be matched.
+                </p>
+            </div>
+        </section>
+        <section class="section has-background-white" id="kick">
+            <div class="container">
+                <h1 class="title is-3">How does Joining work? / Why am I being kicked?</h1>
+                <p class="content is-medium">
+                Since this service uses DMs users need to open a DM channel to the bot in order to participate.
+                However, Discord decided to not allow users to directly DM others without sharing a server or being friends with them.
+                They also prevent Bot Accounts from using the friend system so the only option left was to have user and bot
+                in one server at one point in time to allow them to establish a connection.
+                Though, creating a server, adding the Bot to it, then manually opening a DM channel and writing something is very cumbersome.
+                So to participate you join this special Server where the bot already resides and upon joining it automatically 
+                sends you a DM and kicks you again. This server is SOLELY used to open the DM channel.
+                The decision to kick users after the DM channel has been opened was made to ensure the 
+                anonymity of users. Otherwise, anyone in that server could see who else is using or has used the service and as 
+                it's supposed to be an <i>anonymous</i>, random chat service, this step is integral.
+                This also makes for a clean and nicely integrated joining procedure.
+                </p>
+            </div>
+        </section>
+        <section class="section has-background-grey-darker" id="commands">
+            <div class="container">
+                <h1 class="title is-3 has-text-white">Command Reference</h1>
+                <p class="content is-medium">
+                </p>
+            </div>
+        </section>
+        <section class="section has-background-white" id="faq">
+            <div class="container">
+                <h1 class="title is-3">FAQ</h1>
+                <p class="content is-medium">
+                </p>
+            </div>
+        </section>
+        <footer class="footer has-background-grey-lighter">
+            <div class="content has-text-centered">
+                <b>Discord.Meet</b> by <a href="">Chronody</a>. Website made with <a href="https://bulma.io">Bulma</a>.
+            </div>
+        </footer>
+    </body>
+</html>
