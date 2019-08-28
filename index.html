@@ -8,15 +8,26 @@
     <body class="has-navbaer-fixed-top">
         <nav class="navbar is-fixed-top is-dark" style="border-bottom: 2px solid grey;">
             <div class="navbar-brand has-text-white">
-                <a class="navbar-item title is-5 has-text-white" href="#">Discord.Meet</a>
+                <a class="navbar-item is-5 has-text-white" href="#"><b>Discord.Meet</b></a>
+
+                <!--
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+                -->
             </div>
-            <div class="navbar-end">
-                <a class="navbar-item has-text-white" href="#how">Get started</a>
-                <a class="navbar-item has-text-white" href="#cards">CharacterCards</a>
-                <a class="navbar-item has-text-white" href="#match">Matching Preferences</a>
-                <a class="navbar-item has-text-white" href="#kick">How does joining work?</a>
-                <a class="navbar-item has-text-white" href="#commands">Commands</a>
-                <a class="navbar-item has-text-white" href="#faq">FAQ</a>
+            <div class="navbar-menu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end">
+                    <a class="navbar-item has-text-white" href="#how">Get started</a>
+                    <a class="navbar-item has-text-white" href="#cards">CharacterCards</a>
+                    <a class="navbar-item has-text-white" href="#match">Matching Preferences</a>
+                    <a class="navbar-item has-text-white" href="#join">How does joining work?</a>
+                    <a class="navbar-item has-text-white" href="#commands">Commands</a>
+                    <a class="navbar-item has-text-white" href="#faq">FAQ</a>
+                </div>
             </div>
         </nav>
         <section class="hero is-fullheight-with-navbar" id="hero"> 
@@ -24,17 +35,81 @@
                 <div class="container has-text-centered">
                     <p class="title is-1 has-text-white">Discord.Meet</p>
 
-                    <p class="subtitle is-4 has-text-white">Chat with random people from all over the world right from your DMs</p>
+                    <p class="subtitle is-4 has-text-white">Chat with random people from all over the world!</p>
                     <p class="subtitle is-4 has-text-danger">Currently in CLOSED BETA!</p>
 
-                    <a class="button is-success is-large" href="#">Join now!</a>
-
-                    <a href="#kick"><p class="content has-text-info">Why was I kicked from the server?</p></a>
+                    <a class="button is-success is-large" href="#join">Join now!</a>
 
                     <p class="content is-medium has-text-white">Or if you wanna talk <i>about</i> the service:</p>
 
                     <a class="button is-info" href="#">Join the discussion server</a>
                 </div>
+            </div>
+        </section>
+        <section class="section has-background-white" id="join">
+            <div class="container">
+                <h1 class="title is-3">How to join?</h1>
+                <p class="content is-medium">
+                    There are two seperate methods to join: <br/>
+                    The first, recommended way requires a little initial setup but grants complete anonymity
+                    towards your chatpartners.<br/>
+                    The second method is far simpler, but cannot fully guarantee anonymity towards your chatpartners.<br/>
+                    Click on whichever method you feel comfortable with!
+                </p>
+                <details>
+                    <summary class="content is-3" style="font: 1.5em 'Open Sans', 'Arial', sans-serif; font-weight: bold;">
+                        The anonymous way (Recommended):
+                    </summary>
+
+                    <!--<p class="title is-4">The anonymous way (Recommended):</p>-->
+                    <p class="title is-5">Step 1:</p>
+                    <p class="content is-medium">
+                        Create a new Discord server.<br/>
+                        Give it any name, image or region you like (defaults are fine).<br/>
+                        Modify the server however you like, the Bot will only add a textchannel.
+                    </p>
+
+                    <p class="title is-5">Step 2:</p>
+                    <p class="content is-medium">
+                        Click the button below to invite the bot to your server.<br/>
+                        You may have to sign into Discord in your browser.<br/>
+                        Discord will ask you which server the Bot should be added to, choose the server you just created and click OK.
+                    </p>
+
+                    <a href="" class="button has-background-info has-text-white is-medium">Invite the Bot</a><br/><br/>
+
+                    <p class="title is-5">Step 3:</p>
+                    <p class="content is-medium">
+                        After joining your server, the Bot will immediately create a new textchannel called '#discordmeet' and post
+                        a welcome message with instructions to it.<br/>
+                        <p class="content is-small">The textchannel is auto-marked as NSFW.</p>
+                    </p>
+
+                    <p class="title is-5">Done!</p>
+                    <p class="content is-medium">
+                        Whenever you want to use Discord.Meet now you simply go to your server and interact with the bot in #discordmeet.<br/>
+                        Read about your first steps <a href="#how">here</a>.
+                    </p>
+                </details>
+    
+                <br/><br/>
+
+                <details>
+                    <summary class="content is-3" style="font: 1.5em 'Open Sans', 'Arial', sans-serif; font-weight: bold;">
+                        The fast way (Mobile friendly):
+                    </summary>
+
+                    <!--<p class="title is-4">The fast way:</p>-->
+                    <a href="" class="button is-success is-medium">Join the public server</a><br/>
+                    <p class="content is-small">PLEASE NOTE that you need to stay on the server in order to be able to communicate with the Bot.</p>
+
+                    <p class="title is-5">Done!</p>
+                    <p class="content is-medium">
+                        You can now interact with the Bot via DMs.<br/> 
+                        Read about your first steps <a href="#how">here</a>.<br/>
+
+                    </p>
+                </details>
             </div>
         </section>
         <section class="section has-background-grey-darker" id="how">
@@ -112,34 +187,16 @@
                 </p>
             </div>
         </section>
-        <section class="section has-background-white" id="kick">
+        <section class="section has-background-white" id="commands">
             <div class="container">
-                <h1 class="title is-3">How does Joining work? / Why am I being kicked?</h1>
-                <p class="content is-medium">
-                Since this service uses DMs users need to open a DM channel to the bot in order to participate.
-                However, Discord decided to not allow users to directly DM others without sharing a server or being friends with them.
-                They also prevent Bot Accounts from using the friend system so the only option left was to have user and bot
-                in one server at one point in time to allow them to establish a connection.
-                Though, creating a server, adding the Bot to it, then manually opening a DM channel and writing something is very cumbersome.
-                So to participate you join this special Server where the bot already resides and upon joining it automatically 
-                sends you a DM and kicks you again. This server is SOLELY used to open the DM channel.
-                The decision to kick users after the DM channel has been opened was made to ensure the 
-                anonymity of users. Otherwise, anyone in that server could see who else is using or has used the service and as 
-                it's supposed to be an <i>anonymous</i>, random chat service, this step is integral.
-                This also makes for a clean and nicely integrated joining procedure.
-                </p>
-            </div>
-        </section>
-        <section class="section has-background-grey-darker" id="commands">
-            <div class="container">
-                <h1 class="title is-3 has-text-white">Command Reference</h1>
+                <h1 class="title is-3">Command Reference</h1>
                 <p class="content is-medium">
                 </p>
             </div>
         </section>
-        <section class="section has-background-white" id="faq">
+        <section class="section has-background-grey-darker" id="faq">
             <div class="container">
-                <h1 class="title is-3">FAQ</h1>
+                <h1 class="title is-3 has-text-white">FAQ</h1>
                 <p class="content is-medium">
                 </p>
             </div>
