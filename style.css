@@ -9,6 +9,10 @@
   background-position: center; 
 }
 
+summary{
+	cursor: pointer;
+}
+
 /*
 #hero{
   -webkit-animation-name: rotate;
