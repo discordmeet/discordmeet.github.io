@@ -50,7 +50,7 @@
 		<section class="section has-background-grey-darker" id="what">
 			<div class="container">
 				<h1 class="title is-3 has-text-white">What is this?</h1>
-				<p class="content is-medium has-text-white">
+				<p class="content is-medium has-text-white is-size-3-mobile">
 					Discord.Meet was built with the intention of enabling Discord users to meet new people in one-on-one conversations, instead of only through single-interest servers.
 					Joining a big Server on something you really like can be fun but also scary to some. That's why this service tries to serve an alternative method.<br/>
 					<br/>
@@ -61,11 +61,11 @@
         <section class="section has-background-white" id="join">
             <div class="container">
                 <h1 class="title is-3">How to join?</h1>
-                <p class="content is-medium">
+                <p class="content is-medium is-size-3-mobile">
                     There are two seperate methods to join: <br/>
                     The first, recommended way requires a little initial setup but grants complete anonymity
                     towards your chatpartners.<br/>
-                    The second method is far simpler, but cannot fully guarantee anonymity towards your chatpartners.<br/>
+                    The second method is far simpler, but cannot fully guarantee anonymity towards your chatpartners. <i class="has-text-danger">However it's not available at this time.</i><br/>
                     Click on whichever method you feel comfortable with!
                 </p>
                 <details>
@@ -73,25 +73,24 @@
                         The anonymous way (Recommended):
                     </summary>
 
-                    <!--<p class="title is-4">The anonymous way (Recommended):</p>-->
                     <p class="title is-5">Step 1:</p>
-                    <p class="content is-medium">
-                        Create a new Discord server.<br/>
-                        Give it any name, image or region you like (defaults are fine).<br/>
-                        Modify the server however you like, the Bot will only add a textchannel.
+                    <p class="content is-medium is-size-3-mobile">
+                        Create a <b>new</b> Discord server with just you in it.<br/>
+                        Give it any name and region you like (defaults are fine).<br/>
+                        Modify the server however you like, the Bot will only add a textchannel and change the image.
                     </p>
 
                     <p class="title is-5">Step 2:</p>
-                    <p class="content is-medium">
+                    <p class="content is-medium is-size-3-mobile">
                         Click the button below to invite the bot to your server.<br/>
                         You may have to sign into Discord in your browser.<br/>
                         Discord will ask you which server the Bot should be added to, choose the server you just created and click OK.
                     </p>
 
-                    <a href="#" class="button has-background-info has-text-white is-medium">Invite the Bot</a><br/><br/>
+                    <a href="https://discordapp.com/api/oauth2/authorize?client_id=401408323028647937&permissions=469888114&scope=bot" class="button has-background-info has-text-white is-medium">Invite the Bot</a><br/><br/>
 
                     <p class="title is-5">Done!</p>
-                    <p class="content is-medium">
+                    <p class="content is-medium is-size-3-mobile">
                         After joining your server, the Bot will immediately create a new textchannel called '#discordmeet' and post
                         a welcome message with instructions to it.<br/>
 						<br/>
@@ -102,12 +101,12 @@
     
                 <br/><br/>
 
+                <!--
                 <details>
                     <summary class="content is-3" style="font: 1.5em 'Open Sans', 'Arial', sans-serif; font-weight: bold;">
                         The fast way (Mobile friendly):
                     </summary>
 
-                    <!--<p class="title is-4">The fast way:</p>-->
                     <a href="#" class="button is-success is-medium">Join the public server</a><br/>
                     <p class="content is-small">PLEASE NOTE that you need to stay on the server in order to be able to communicate with the Bot.</p>
 
@@ -118,6 +117,7 @@
 
                     </p>
                 </details>
+                -->
             </div>
         </section>
         <section class="section has-background-grey-darker" id="how">
@@ -144,7 +144,7 @@
                 <p class="content is-medium">
                 Now that you're all set up you can start meeting new people!
                 To get going simply type <span class="tag is-info is-medium">!search</span>. <br/>
-                If you decide you wanna meet someone else during and active chat, type <span class="tag is-info is-medium">!next</span>.
+                If you decide you wanna meet someone else during an active chat, type <span class="tag is-info is-medium">!next</span>.
                 </p>
             </div>
         </section>
@@ -207,7 +207,8 @@
 						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!search</span> - Start searching for a chatpartner</li>
 						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!leave</span> - Leave current conversation/Stop searching</li>
 						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!next</span> - Leave current conversation and immediately start searching for a new one</li>
-						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!state</span> - Query your current state. Either 'Idle', 'Searching' or 'in Conversation'</li>
+						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!state</span> - Query your current state. Either 'Idle', 'Searching' or 'in Conversation'. Also displays your character card.</li>
+						<li><span class="tag is-info is-medium" style="margin-bottom:5px;">!partner</span> - Query your partners character card.</li>
 					</ul>
 					<br/>
 
@@ -218,15 +219,17 @@
 						<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!setgender GENDER</span> - Set your own gender.</li>
 						<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!setimage IMAGELINK</span> - Set a 'profile image' to be displayed to your peer. Must be direct HTTP(S) link to an image file.</li>
 						<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!setdescription "DESCRIPTION"</span> - Set a description to be displayed to your peer</li>
-						<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!setnsfw</span> - Toggles wether or not you want a NSFW chatpartner</li>
+                        <!--<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!setnsfw</span> - Toggles wether or not you want a NSFW chatpartner</li>-->
 						<li><span class="tag is-warning is-medium" style="margin-bottom:5px;">!reset</span> - Resets all settings</li>
 					</ul>
 					<br/>
 
+                    <!--
 					<p class="title is-5">Social</p>
 					<ul style="list-style: none;">
 						<li><span class="tag is-danger is-medium" style="margin-bottom:5px;">!block</span> - Block current chatpartner for 24h</li>
 					</ul>
+                    -->
             </div>
         </section>
 		<!--
@@ -240,7 +243,7 @@
 		-->
         <footer class="footer has-background-grey-lighter">
             <div class="content has-text-centered">
-                <b>Discord.Meet</b> by <a href="">Chronody</a>. Website made with <a href="https://bulma.io">Bulma</a>.
+                <b>Discord.Meet</b> by <a href="https://chronody.net">Chronody</a>. Website made with <a href="https://bulma.io">Bulma</a>.
             </div>
         </footer>
     </body>
